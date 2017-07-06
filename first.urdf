@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<robot name="firsttry">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </visual>
+  </link>
+
+
+  <link name="sonar0">
+    <visual>
+      <geometry>
+         <!--<box size="0.01 0.01 0.01" /> -->
+        <!--  <mesh filename="package://hector_sensors_description/meshes/sonar_sensor/max_sonar_ez4.dae"/> -->
+      </geometry>
+      <origin rpy="1.57075 1.57075 0" xyz="0 0 -0.3"/>
+    </visual>
+  </link>
+
+  <joint name="sonar0_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="sonar0"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 -0.22 0.25"/>
+  </joint>
+
+
+</robot>
