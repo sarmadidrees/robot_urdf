@@ -41,4 +41,8 @@ ClassName=rviz::GridDisplay
 [Display1]
 Name=Robot Model
 Package=rviz
+<<<<<<< HEAD
 ClassName=rviz::RobotModelDisplay
+=======
+ClassName=rviz::RobotModelDisplay
+>>>>>>> 6be832c19f2228a5d6a949f59338f3cf12fb0185
