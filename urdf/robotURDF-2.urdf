@@ -19,12 +19,26 @@
     </visual>
   </link>
 
+  <!--IMU Link-->
+  <joint name="imu_link_joint" type="floating">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
   <!--SENSOR HEAD-->
   <joint name="sensor_head_link_joint" type="fixed">
     <axis xyz="1 0 0"/>
-    <parent link="base_link"/>
+    <parent link="imu_link"/>
     <child link="sensor_head_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0.25"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 
   <link name="sensor_head_link">
@@ -32,23 +46,6 @@
       <geometry>
         <mesh filename="package://robot_urdf/meshes/sensorHead.stl"/>
        <!-- <box size="0.45 0.35 0.22"/> -->
-      </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-    </visual>
-  </link>
-
-  <!--IMU LINK-->
-  <joint name="imu_link_joint" type="floating">
-    <axis xyz="1 0 0"/>
-    <parent link="sensor_head_link"/>
-    <child link="imu_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-  </joint>
-
-  <link name="imu_link">
-    <visual>
-      <geometry>
-        <box size="0.01 0.01 0.01"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>

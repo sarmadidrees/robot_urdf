@@ -10,6 +10,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /RobotModel1
+        - /RobotModel2
       Splitter Ratio: 0.5
     Tree Height: 531
   - Class: rviz/Views
@@ -39,6 +40,69 @@ Visualization Manager:
       Reference Frame: <Fixed Frame>
       Value: true
     - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_link:
+          Value: true
+        imu_link:
+          Value: true
+        lidar_link:
+          Value: true
+        sensor_head_link:
+          Value: true
+        sonar0:
+          Value: true
+        sonar1:
+          Value: true
+        sonar2:
+          Value: true
+        sonar3:
+          Value: true
+        sonar4:
+          Value: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        imu_link:
+          base_link:
+            {}
+          sensor_head_link:
+            lidar_link:
+              {}
+            sonar0:
+              {}
+            sonar1:
+              {}
+            sonar2:
+              {}
+            sonar3:
+              {}
+            sonar4:
+              {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -99,53 +163,6 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Class: rviz/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        base_link:
-          Value: true
-        imu_link:
-          Value: true
-        lidar_link:
-          Value: true
-        sensor_head_link:
-          Value: true
-        sonar0:
-          Value: true
-        sonar1:
-          Value: true
-        sonar2:
-          Value: true
-        sonar3:
-          Value: true
-        sonar4:
-          Value: true
-      Marker Scale: 0.5
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        base_link:
-          sensor_head_link:
-            imu_link:
-              {}
-            lidar_link:
-              {}
-            sonar0:
-              {}
-            sonar1:
-              {}
-            sonar2:
-              {}
-            sonar3:
-              {}
-            sonar4:
-              {}
-      Update Interval: 0
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -165,7 +182,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 2.27936
+      Distance: 1.242
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -177,10 +194,10 @@ Visualization Manager:
         Z: 0
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.0503987
+      Pitch: 0.120399
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 4.47358
+      Yaw: 3.80173
     Saved: ~
 Window Geometry:
   Displays:
