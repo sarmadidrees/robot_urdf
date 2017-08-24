@@ -12,7 +12,7 @@ Panels:
         - /RobotModel1
         - /RobotModel2
       Splitter Ratio: 0.5
-    Tree Height: 531
+    Tree Height: 525
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -84,22 +84,21 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        imu_link:
-          base_link:
-            {}
-          sensor_head_link:
-            lidar_link:
-              {}
-            sonar0:
-              {}
-            sonar1:
-              {}
-            sonar2:
-              {}
-            sonar3:
-              {}
-            sonar4:
-              {}
+        base_link:
+          imu_link:
+            sensor_head_link:
+              lidar_link:
+                {}
+              sonar0:
+                {}
+              sonar1:
+                {}
+              sonar2:
+                {}
+              sonar3:
+                {}
+              sonar4:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -194,10 +193,10 @@ Visualization Manager:
         Z: 0
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.120399
+      Pitch: 0.305399
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 3.80173
+      Yaw: 1.95856
     Saved: ~
 Window Geometry:
   Displays:
@@ -205,7 +204,7 @@ Window Geometry:
   Height: 744
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000002000000000000016a000002a2fc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000001930000006400fffffffb000000100044006900730070006c0061007900730100000028000002a2000000dd00ffffff000000010000010f000002a2fc0200000001fb0000000a005600690065007700730100000028000002a2000000b000ffffff0000029c000002a200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000002000000000000016a00000298fc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000001930000005300fffffffb000000100044006900730070006c006100790073010000003600000298000000b700ffffff000000010000010f00000298fc0200000001fb0000000a005600690065007700730100000036000002980000009b00ffffff0000029c0000029800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Tool Properties:
     collapsed: false
   Views:
